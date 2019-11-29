@@ -12,7 +12,7 @@
     <artifactId>group-chatroom</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>group-chatroom</name>
-    <description>Demo project for Spring Boot</description>
+    <description>Anonymous chatting room for discussing trending issues without prejudice</description>
 
     <properties>
         <java.version>11</java.version>
