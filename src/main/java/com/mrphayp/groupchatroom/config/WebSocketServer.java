@@ -17,7 +17,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 @Component
 @ServerEndpoint("/chat")
-public class WebSockerServer {
+public class WebSocketServer {
     /**
      * All chat sessions.
      */
