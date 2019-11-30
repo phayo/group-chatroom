@@ -15,7 +15,7 @@ public class MessageController {
      */
     @GetMapping("/")
     public ModelAndView login() {
-        return new ModelAndView("/login");
+        return new ModelAndView("login");
     }
 
     /**
@@ -24,14 +24,15 @@ public class MessageController {
     @GetMapping("/index")
     public ModelAndView index(String username, HttpServletRequest request) throws UnknownHostException {
         //TODO: add code for login to chatroom.
-        ModelAndView mv = new ModelAndView("/chat");
+        ModelAndView mv = new ModelAndView("chat");
         if(username == null || username == ""){
             username = "Anonymous";
         }
 
         mv.addObject("username", username);
         // TODO: To return Route = "ws://localhost:8080/chat"
-        mv.addObject("url","ws://" + InetAddress.getLocalHost().getHostName() + ":" +request.getServerPort()+request.getContextPath() + "/chat");
+        System.out.println(request.getRequestURL());
+        mv.addObject("url","wss://" + request.getRequestURL() + "/chat");
         return mv;
     }
 }

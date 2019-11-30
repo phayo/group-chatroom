@@ -1,0 +1,1 @@
+web: java -jar target/group-chatroom-0.0.1-SNAPSHOT.war -Dserver.port=$PORT $JAR_OPTS
