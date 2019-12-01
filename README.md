@@ -9,4 +9,4 @@ Anonymous group chatting platform, no data persistence.
 - SpringBoot test.
 
 ### Demo
-[link](https://anonymous-group-chatroom.herokuapp.com/)
+[live link](https://anonymous-group-chatroom.herokuapp.com/)
